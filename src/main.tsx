@@ -1,11 +1,16 @@
-
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import Hero from './components/Hero'
+import CTAButton from './components/CTAButton'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const App = () => {
+  return (
+    <div dir="rtl" style={{ padding: "2rem", textAlign: "right" }}>
+      <Hero />
+      <p>אתר זה מציג את הרעיון של מארז דמות אישי – בעברית מלאה.</p>
+      <CTAButton />
+    </div>
+  )
+}
+
+export default App
+
